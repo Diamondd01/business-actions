@@ -12,5 +12,8 @@ it('should render', () => {
   expect(screen.getByText('Business Contacts')).toBeInTheDocument();
 });
 it('should do something amazing', () => {
-  expect(false).toBe(true);
+
+  render(<App />);
+
+  expect(screen.getByText('Business Actions')).toBeInTheDocument();
 });
