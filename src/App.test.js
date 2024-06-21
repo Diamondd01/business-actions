@@ -14,5 +14,5 @@ it('should render', () => {
 it('should do something amazing', () => {
   render(<App />);
 
-  expect(false).toBe(false);
+  expect(screen.getByText('Business Actions')).toBe("Business Actions")
 });
